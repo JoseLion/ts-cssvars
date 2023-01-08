@@ -1,3 +1,11 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/JoseLion/ts-cssvars/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/JoseLion/ts-cssvars/tree/main)
+[![NPM version](https://img.shields.io/npm/v/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
+[![NPM bundle size](https://img.shields.io/bundlephobia/min/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
+[![NPM downloads](https://img.shields.io/npm/dm/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
+[![NPM license](https://img.shields.io/npm/l/ts-cssvars)](./LICENSE)
+[![GitHub Release Date](https://img.shields.io/github/release-date/JoseLion/ts-cssvars)](https://github.com/JoseLion/ts-cssvars/releases)
+[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/ts-cssvars)](https://snyk.io/)
+
 # TS CSSVars
 
 A type-safe way to define and use CSS variables in JS/TS context. With `ts-cssvars` you will not only forget about typos, but it also allows you to modularize and centralize your CSS variables. It's perfect for using with CSS-in-JS libraries like [Styled Components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
