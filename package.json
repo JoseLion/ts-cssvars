@@ -32,6 +32,7 @@
     "compile": "tsc",
     "docs": "typedoc",
     "lint": "eslint . --report-unused-disable-directives",
+    "release": "semantic-release",
     "test": "NODE_ENV=test mocha \"test/**/*.test.ts\""
   },
   "devDependencies": {
@@ -46,6 +47,7 @@
     "eslint-plugin-jsdoc": "^39.6.4",
     "expect-type": "^0.15.0",
     "mocha": "^10.2.0",
+    "semantic-release": "^20.0.2",
     "ts-node": "^10.9.1",
     "typedoc": "^0.23.24",
     "typedoc-plugin-markdown": "^3.14.0",
