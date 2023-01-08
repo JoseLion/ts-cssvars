@@ -32,10 +32,15 @@
     "files": "*.ts?(x)",
     "parser": "@typescript-eslint/parser"
   }, {
-    "files": ["test/**/*.ts?(x)"],
+    "files": "*.test.ts?(x)",
     "rules": {
       "@typescript-eslint/no-non-null-assertion": "off",
       "@typescript-eslint/restrict-template-expressions": "off"
+    }
+  }, {
+    "files": "*.typetest.ts?(x)",
+    "rules": {
+      "@typescript-eslint/ban-ts-comment": ["error", { "ts-expect-error": false }]
     }
   }, {
     "files": "*.js?(x)",
