@@ -4,3 +4,8 @@ export {
   VarKey,
   makeCssVars,
 } from "./lib/makeCssVars";
+
+export {
+  MergeVars,
+  mergeCssVars,
+} from "./lib/mergeCssVars";
