@@ -65,9 +65,9 @@ export interface CssVarContext<T extends string> {
 /**
  * Creates a `CssVarContext` object with the passed css variable definitions.
  * This context contains the `cssvar(..)` function used to reference the css
- * variables in the context, the `overwrite(..)` function used to reassign the
- * value of css variables in the context, and the `definitions` value which is
- * the raw css variable definitions of the context.
+ * variables from the context, the `overwrite(..)` function used to reassign
+ * the value of css variables in the context, and the `definitions` value which
+ * is the raw css variable definitions of the context.
  *
  * **Note:** The css variable must start with `--` for the type system to work.
  *
