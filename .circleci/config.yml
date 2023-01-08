@@ -78,6 +78,21 @@ jobs:
           name: Test
           command: yarn test --forbid-only
 
+  release:
+    working_directory: ~/repos/ts-cssvars
+    executor: basic
+
+    steps:
+      - bootstrap
+
+      - run:
+          name: Build
+          command: yarn build
+
+      - run:
+          name: Release
+          command: yarn release
+
 workflows:
   main:
     jobs:
@@ -85,3 +100,10 @@ workflows:
           matrix:
             parameters:
               nodejs: ["16", "17", "18", "19"]
+
+      - release:
+          requires:
+            - build
+          filters:
+            branches:
+              only: release
