@@ -1,11 +1,13 @@
+export { NonEmptyArray } from "./helpers/common";
+
 export {
   CssVarContext,
   CssVars,
-  VarKey,
   makeCssVars,
+  VarKey,
 } from "./lib/makeCssVars";
 
 export {
-  MergeVars,
   mergeCssVars,
+  MergeVars,
 } from "./lib/mergeCssVars";
