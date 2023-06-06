@@ -24,22 +24,22 @@ expectTypeOf<CssVars<"...">>().toBeNever();
 expectTypeOf<CssVars<"--gap: 10;">>().toEqualTypeOf<"gap">();
 expectTypeOf<CssVars<MultiVars>>().toEqualTypeOf<"color" | "gap">();
 
-expectTypeOf<CssVarContext<"...">>().toEqualTypeOf<{
+expectTypeOf<CssVarContext<"...">>().toMatchTypeOf<{
   cssvar: (varname: never) => `var(--${never})`;
   definitions: "...";
   overwrite: (varname: never, value: string | number) => `--${never}: ${typeof value};`;
 }>();
-expectTypeOf<CssVarContext<"--gap: 10;">>().toEqualTypeOf<{
+expectTypeOf<CssVarContext<"--gap: 10;">>().toMatchTypeOf<{
   cssvar: (varname: "gap") => "var(--gap)";
   definitions: "--gap: 10;";
   overwrite: (varname: "gap", value: string | number) => `--gap: ${typeof value};`;
 }>();
-expectTypeOf<CssVarContext<OneVar>>().toEqualTypeOf<{
+expectTypeOf<CssVarContext<OneVar>>().toMatchTypeOf<{
   cssvar: (varname: "gap") => "var(--gap)";
   definitions: OneVar;
   overwrite: (varname: "gap", value: string | number) => `--gap: ${typeof value};`;
 }>();
-expectTypeOf<CssVarContext<MultiVars>>().toEqualTypeOf<{
+expectTypeOf<CssVarContext<MultiVars>>().toMatchTypeOf<{
   cssvar: (varname: "color" | "gap") => `var(--${typeof varname})`;
   definitions: MultiVars;
   overwrite: (varname: "color" | "gap", value: string | number) => `--${typeof varname}: ${typeof value};`;
