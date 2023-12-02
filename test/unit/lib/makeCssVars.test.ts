@@ -1,4 +1,4 @@
-import { expect } from "@stackbuilders/assertive-ts";
+import { expect } from "@assertive-ts/core";
 
 import { makeCssVars } from "../../../src/lib/makeCssVars";
 
@@ -9,7 +9,7 @@ describe("[Unit] makeCssVars.test.ts", () => {
       --secondary-color: blue;
     `);
 
-    expect(context).toContainAllKeys(["cssvar", "definitions", "overwrite"]);
+    expect(context).toContainAllKeys("cssvar", "definitions", "overwrite");
   });
 
   describe(".cssvar", () => {
