@@ -1,10 +1,13 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/JoseLion/ts-cssvars/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/JoseLion/ts-cssvars/tree/main)
-[![NPM version](https://img.shields.io/npm/v/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
+[![CI](https://github.com/JoseLion/ts-cssvars/actions/workflows/ci.yml/badge.svg)](https://github.com/JoseLion/ts-cssvars/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/JoseLion/ts-cssvars/actions/workflows/codeql.yml/badge.svg)](https://github.com/JoseLion/ts-cssvars/actions/workflows/codeql.yml)
+[![Pages](https://github.com/JoseLion/ts-cssvars/actions/workflows/pages.yml/badge.svg)](https://github.com/JoseLion/ts-cssvars/actions/workflows/pages.yml)
+[![Release](https://github.com/JoseLion/ts-cssvars/actions/workflows/release.yml/badge.svg)](https://github.com/JoseLion/ts-cssvars/actions/workflows/release.yml)
+[![NPM version](https://img.shields.io/npm/v/ts-cssvars?logo=npm)](https://www.npmjs.com/package/ts-cssvars)
 [![NPM bundle size](https://img.shields.io/bundlephobia/min/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
 [![NPM downloads](https://img.shields.io/npm/dm/ts-cssvars)](https://www.npmjs.com/package/ts-cssvars)
 [![NPM license](https://img.shields.io/npm/l/ts-cssvars)](./LICENSE)
 [![GitHub Release Date](https://img.shields.io/github/release-date/JoseLion/ts-cssvars)](https://github.com/JoseLion/ts-cssvars/releases)
-[![Snyk Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/ts-cssvars)](https://snyk.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/JoseLion/ts-cssvars/badge.svg)](https://snyk.io/test/github/JoseLion/ts-cssvars)
 
 # TS CSSVars
 
