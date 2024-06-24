@@ -1,7 +1,7 @@
 import { expectTypeOf } from "expect-type";
 
-import { NonEmptyArray } from "../../src/helpers/common";
-import { CssVarContext, CssVars, MergeVars, VarKey } from "../../src/index";
+import type { NonEmptyArray } from "../../src/helpers/common";
+import type { CssVarContext, CssVars, MergeVars, VarKey } from "../../src/main";
 
 expectTypeOf<CssVarContext<string>>().not.toBeAny();
 expectTypeOf<CssVars<string>>().not.toBeAny();

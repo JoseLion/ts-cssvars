@@ -1,6 +1,6 @@
 import { expectTypeOf } from "expect-type";
 
-import { NonEmptyArray } from "../../../src/helpers/common";
+import type { NonEmptyArray } from "../../../src/helpers/common";
 
 expectTypeOf<NonEmptyArray<number>>().toMatchTypeOf([1]);
 expectTypeOf<NonEmptyArray<number>>().toMatchTypeOf([1, 2]);

@@ -1,6 +1,6 @@
 import { expectTypeOf } from "expect-type";
 
-import { CssVarContext, CssVars, VarKey, makeCssVars } from "../../../src/lib/makeCssVars";
+import { type CssVarContext, type CssVars, type VarKey, makeCssVars } from "../../../src/lib/makeCssVars";
 
 type OneVar = `
   --gap: 10;
