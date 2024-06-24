@@ -1,6 +1,6 @@
-import { NonEmptyArray } from "../helpers/common";
+import { type CssVarContext, makeCssVars } from "./makeCssVars";
 
-import { CssVarContext, makeCssVars } from "./makeCssVars";
+import type { NonEmptyArray } from "../helpers/common";
 
 /**
  * Recursively merge all CssVarContext on an array into a single CssVarContext.

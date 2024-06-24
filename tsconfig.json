@@ -6,8 +6,9 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "incremental": true,
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
@@ -15,24 +16,20 @@
     "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./build/",
+    "outDir": "./build",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ES6",
-    "typeRoots" : [
-      "./node_modules/@types/",
-      "./typings/"
-    ],
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "useUnknownInCatchVariables": true,
+    "verbatimModuleSyntax": true
   },
   "exclude": [
-    ".yarn/*",
-    "build/*",
-    "dist/*",
-    "node_modules/*"
-  ],
-  "ts-node": {
-    "transpileOnly": true
-  }
+    ".yarn/**",
+    "build/**",
+    "dist/**",
+    "node_modules/**"
+  ]
 }
