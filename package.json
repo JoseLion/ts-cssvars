@@ -23,9 +23,9 @@
     "src/"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "yarn@4.3.1",
   "scripts": {
     "build": "tsc -p tsconfig.prod.json",
     "check": "yarn compile && yarn lint && yarn test",
@@ -36,15 +36,15 @@
     "test": "NODE_ENV=test mocha \"test/**/*.test.ts\""
   },
   "devDependencies": {
-    "@assertive-ts/core": "^2.0.0",
+    "@assertive-ts/core": "^2.1.0",
     "@eslint/compat": "^1.1.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.5.0",
     "@stylistic/eslint-plugin": "^2.2.2",
     "@types/eslint__eslintrc": "^2.1.1",
     "@types/eslint__js": "^8.42.3",
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.5",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20.14.8",
     "eslint": "^9.5.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-deprecation": "^3.0.0",
@@ -53,15 +53,15 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.3.0",
     "eslint-plugin-sonarjs": "^1.0.3",
-    "expect-type": "^0.17.3",
-    "mocha": "^10.2.0",
-    "semantic-release": "^23.0.0",
+    "expect-type": "^0.19.0",
+    "mocha": "^10.4.0",
+    "semantic-release": "^24.0.0",
     "semantic-release-yarn": "^3.0.2",
     "ts-node": "^10.9.2",
-    "typedoc": "^0.25.7",
-    "typedoc-plugin-markdown": "^3.17.1",
+    "typedoc": "^0.26.2",
+    "typedoc-plugin-markdown": "^4.1.0",
     "typedoc-plugin-merge-modules": "^5.1.0",
-    "typescript": "^5.3.3",
+    "typescript": "^5.5.2",
     "typescript-eslint": "^7.13.1"
   }
 }
