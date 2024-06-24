@@ -1,7 +1,7 @@
 import { expectTypeOf } from "expect-type";
 
 import { CssVarContext, makeCssVars } from "../../../src/lib/makeCssVars";
-import { mergeCssVars, MergeVars } from "../../../src/lib/mergeCssVars";
+import { MergeVars, mergeCssVars } from "../../../src/lib/mergeCssVars";
 
 type AllVars = `
   --primary-color: red;

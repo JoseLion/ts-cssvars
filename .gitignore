@@ -8,10 +8,13 @@ node_modules/
 !.yarn/versions
 
 ### Auto-generated ###
-build/
-dist/
-dist.tar.gz
-docs/build/
+build
+dist
+docs/build
+*.tar.gz
 
 ### Logs ###
 *.log
+
+### IDEs
+.vscode

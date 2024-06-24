@@ -1,6 +1,6 @@
 import { expectTypeOf } from "expect-type";
 
-import { CssVarContext, CssVars, makeCssVars, VarKey } from "../../../src/lib/makeCssVars";
+import { CssVarContext, CssVars, VarKey, makeCssVars } from "../../../src/lib/makeCssVars";
 
 type OneVar = `
   --gap: 10;
@@ -47,12 +47,12 @@ expectTypeOf<CssVarContext<MultiVars>>().toMatchTypeOf<{
 
 expectTypeOf(cssvar("color")).toEqualTypeOf<"var(--color)">();
 expectTypeOf(cssvar("gap")).toEqualTypeOf<"var(--gap)">();
-// @ts-expect-error
+// @ts-expect-error wrong var name
 expectTypeOf(cssvar("foo")).not.toEqualTypeOf<"var(--foo)">();
 
 expectTypeOf(definitions).toEqualTypeOf<MultiVars>();
 
 expectTypeOf(overwrite("color", "blue")).toEqualTypeOf<"--color: blue;">();
 expectTypeOf(overwrite("gap", 50)).toEqualTypeOf<"--gap: 50;">();
-// @ts-expect-error
+// @ts-expect-error wrong var name
 expectTypeOf(overwrite("foo", false)).not.toEqualTypeOf<"--foo: false;">();
